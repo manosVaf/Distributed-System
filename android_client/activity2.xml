@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Point A"
+        android:id="@+id/point1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="38dp"
+        android:textColor="#f71921"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/point2"
+        android:layout_alignStart="@+id/point2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Point B"
+        android:id="@+id/point2"
+        android:layout_marginTop="41dp"
+        android:textColor="#0bf239"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/point1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/pointa"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/point1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/point2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/pointb"
+        android:layout_alignBottom="@+id/point2"
+        android:layout_alignLeft="@+id/pointa"
+        android:layout_alignStart="@+id/pointa"
+        android:layout_alignTop="@+id/point2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give   First   \n Date"
+        android:id="@+id/date1"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/point2"
+        android:layout_alignStart="@+id/point2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Second \n Date"
+        android:id="@+id/date2"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/date1"
+        android:layout_alignLeft="@+id/date1"
+        android:layout_alignStart="@+id/date1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Checkins"
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/date1"
+        android:layout_alignLeft="@+id/pointb"
+        android:layout_alignStart="@+id/pointb"
+        android:layout_alignTop="@+id/date1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/takedate2"
+        android:layout_alignTop="@+id/date2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignBottom="@+id/date2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/takedate1"
+        android:layout_above="@+id/date2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/textView3" />
+
+</RelativeLayout>
